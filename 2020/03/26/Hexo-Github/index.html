@@ -6,7 +6,10 @@
   <title>Hexo+Github博客搭建超详细教程 | Hexo</title>
   <meta name="author" content="John Doe">
   
-  <meta name="description" content="下面是本人搭建 Hexo 博客的过程还有踩过的坑，希望对你有帮助。Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ">
+  <meta name="description" content="下面是本人搭建 Hexo 博客的过程还有踩过的坑，希望对你有帮助。
+流程下载Git与Nodejs
+官网地址 ：Git官网 和 Nodejs官网 🙂
+安装完成检查版本：1234$ git version$ git version 2.10.1.windows.1$ node -v$ v13.11.0">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -61,22 +64,76 @@
     </header>
     <div class="e-content entry" itemprop="articleBody">
       
-        <p>下面是本人搭建 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 博客的过程还有踩过的坑，希望对你有帮助。<br>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><h3 id="下载Git与Nodejs"><a href="#下载Git与Nodejs" class="headerlink" title="下载Git与Nodejs"></a>下载Git与Nodejs</h3><p>*官网地址 ：<a href="https://hexo.io/" target="_blank" rel="noopener">Git</a> 和 <a href="https://hexo.io/" target="_blank" rel="noopener">Nodejs</a> 🙂<br>*安装完成检查版本：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git version</span><br><span class="line">$ git version 2.10.1.windows.1</span><br><span class="line">$ node -v</span><br><span class="line">$ v13.11.0</span><br></pre></td></tr></table></figure>
-<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E6%A3%80%E6%9F%A51.png" alt=""><br><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E6%A3%80%E6%9F%A52.png" alt=""></p>
+        <p>下面是本人搭建 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 博客的过程还有踩过的坑，希望对你有帮助。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><h3 id="下载Git与Nodejs"><a href="#下载Git与Nodejs" class="headerlink" title="下载Git与Nodejs"></a>下载Git与Nodejs</h3><ul>
+<li>官网地址 ：<a href="https://hexo.io/" target="_blank" rel="noopener">Git官网</a> 和 <a href="https://hexo.io/" target="_blank" rel="noopener">Nodejs官网</a> 🙂</li>
+<li>安装完成检查版本：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git version</span><br><span class="line">$ git version 2.10.1.windows.1</span><br><span class="line">$ node -v</span><br><span class="line">$ v13.11.0</span><br></pre></td></tr></table></figure>
+<img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E6%A3%80%E6%9F%A51.png" alt="git版本检查"><br><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E6%A3%80%E6%9F%A52.png" alt="nodejs版本检查"></li>
+</ul>
 <p>你需要的工具基本搭载完成 ！</p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>*创建一个文件夹存放 Hexo 文件，我创建文件夹名 blogtest<br>*打开 Git bash<br>*用 cd 跳转到 blogtest 文件夹里</p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
+<li>创建一个文件夹存放 Hexo 文件，我创建文件夹名 blogtest</li>
+<li>打开 Git bash</li>
+<li>用 cd 跳转到 blogtest 文件夹里</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">需要用到的 <span class="built_in">cd</span> 命令用法</span><br><span class="line"><span class="built_in">cd</span> (回到最根部)</span><br><span class="line"><span class="built_in">cd</span> d: (跳转到D盘，其他盘同理)</span><br><span class="line"><span class="built_in">cd</span> d:\blog (跳转到指定路径)</span><br></pre></td></tr></table></figure>
-<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/cd%E8%B7%B3%E8%BD%AC.png" alt=""></p>
-<p>*安装 Hexo<br>在git brash 输入npm install hexo-cli -g 即可<br><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E5%AE%89%E8%A3%85hexo%E5%91%BD%E4%BB%A4.png" alt=""></p>
-<p>下载完成 执行初始化命令 hexo init ，初始化完成后打开文件夹可看到：<br><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E5%88%9D%E5%A7%8B%E5%8C%96.png" alt=""></p>
-<p>你的本地博客基本上搭建完成了，现在该让它与 github 连接起来了: <a href="https://github.com/" target="_blank" rel="noopener">Github</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/cd%E8%B7%B3%E8%BD%AC.png" alt="cd跳转"></p>
+<ul>
+<li>在 blogtest 文件夹中安装 Hexo<br>在git brash 输入npm install hexo-cli -g 即可</li>
+</ul>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E5%AE%89%E8%A3%85hexo%E5%91%BD%E4%BB%A4.png" alt="安装成功"></p>
+<p>下载完成 执行初始化命令 hexo init ，初始化完成后打开文件夹可看到：</p>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/%E5%88%9D%E5%A7%8B%E5%8C%96.png" alt="文件夹内容"></p>
+<ul>
+<li><p>文件夹内容简介：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">node_modules：是依赖包</span><br><span class="line">scaffolds：命令生成文章等的模板</span><br><span class="line"><span class="built_in">source</span>：用命令创建的各种文章</span><br><span class="line">themes：主题</span><br><span class="line">_config.yml：整个博客的配置</span><br><span class="line">package.json：项目所需模块项目的配置信息</span><br></pre></td></tr></table></figure></li>
+<li><p>安装服务器独立模块：npm i hexo-server</p>
+</li>
+<li><p>执行下面三段代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
+<li><p>打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+</li>
+</ul>
+<p>你的本地博客基本上搭建完成了，现在该让它与 github 连接起来了: <a href="https://github.com/" target="_blank" rel="noopener">Github官网</a></p>
+<h3 id="使用SSH密钥连接Github"><a href="#使用SSH密钥连接Github" class="headerlink" title="使用SSH密钥连接Github"></a>使用SSH密钥连接Github</h3><ul>
+<li>创建一对新的SSH密钥(keys)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></span><br><span class="line"><span class="comment">#这将按照你提供的邮箱地址，创建一对密钥</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/you/.ssh/id_rsa): [Press enter](按下回车就行)</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): [Type a passphrase](输入你想设置的密码)</span><br><span class="line">Enter same passphrase again: [Type passphrase again](再次输入密码)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>输入完成之后，屏幕会显示如下信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/ssh.png" alt="SSH密钥"></p>
+<ul>
+<li>用记事本打开 id_rsa.pub </li>
+</ul>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/ssh%E2%80%94%E2%80%94detail.jpg" alt="SSH密钥详情"></p>
+<ul>
+<li>打开Github账号,右上角点击账号里的设置</li>
+</ul>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/SSH%20keys.png" alt="SSH 的位置"></p>
+<ul>
+<li>复制 id_rsa.pub里的内容到 Key 里，随便取个 Title.</li>
+</ul>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/ssh_end.jpg" alt="SSH 配置完成"></p>
+<p>*回到 git brash 测试连接是否成功，测试代码：$ ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
+<p><img src="https://mercy-he-1256349981.cos.ap-chengdu.myqcloud.com/mercy-he/Img/hexo-github/ssh%E6%A3%80%E6%B5%8B.webp" alt="SSH 测试"><br>如果出现类似红框中的文字即说明可以连接到github。</p>
+<p>就差最后一步了！</p>
+<h3 id="配置blog项目"><a href="#配置blog项目" class="headerlink" title="配置blog项目"></a>配置blog项目</h3><ul>
+<li>修改文件夹中 _config.yml 文件的一些配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<ul>
+<li>执行下面三条命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    hexo clean</span><br><span class="line">    hexo generate</span><br><span class="line">    hexo deploy</span><br></pre></td></tr></table></figure>
+<ul>
+<li>注意 deploy 的过程中要输入你的 username 及 passward</li>
+</ul>
+<p><img src="https://visugar.oss-cn-shenzhen.aliyuncs.com/article/setuphexo/deploy.png" alt=" deploy "></p>
+<ul>
+<li>在浏览器中输入！<a href="http://yourgithubname.github.io" target="_blank" rel="noopener">http://yourgithubname.github.io</a> 就可以看到你的个人博客啦</li>
+</ul>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
